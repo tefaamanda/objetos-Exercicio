@@ -7,21 +7,24 @@
 </head>
 <body>
     <script>
-        const objeto = {
-            propriedade: 1
+        const Carro = {
+            proprietario: "Kátia"
         }
 
-        function modificandoObjeto(objeto, chave, valor) {
-            objeto[chave] = valor
+        function verificaPropriedade(objeto, propriedade) {
+            if (propriedade in objeto){
+                return true
+            }
+            else {
+                return false
+            }
         }
 
-        modificandoObjeto(objeto, "propriedade2", 2)
+        verificaPropriedade(Carro, "proprietario") //True
+        verificaPropriedade(Carro, "modelo") //False
         
-        console.log(objeto)
-        
-        // Criei um objeto e, em seguida, uma função "modificandoObjeto" com as propriedades "objeto", "chave" e "valor"
-        // e detro da função atribui a "chave" e o seu "valor" ao objeto. Por fim atribui os valores à "propriedade" e o seu
-        // "valor" e atribui esses dados ao "objeto" inicial. Por fim, printei pelo Console com "console.log()".
+        // Criei um objeto "Carro" e atribui a ele a propriedade "proprietario". Na função utilizei da condição de
+        // se a propriedade estiver em objeto, retorna "verdadeiro" e caso contrário, retorna "falso". Por fim, testei.
     </script>
 </body>
 </html>
