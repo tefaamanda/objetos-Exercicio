@@ -7,14 +7,21 @@
 </head>
 <body>
     <script>
-        function modificandoObjeto (objeto, chave, valor) {
+        const objeto = {
+            propriedade: 1
+        }
+
+        function modificandoObjeto(objeto, chave, valor) {
             objeto[chave] = valor
         }
-        var dados = ("Garrafa", "preco", 15)
-        console.log(dados)
+
+        modificandoObjeto(objeto, "propriedade2", 2)
         
-        // A
-        // A
+        console.log(objeto)
+        
+        // Criei um objeto e, em seguida, uma função "modificandoObjeto" com as propriedades "objeto", "chave" e "valor"
+        // e detro da função atribui a "chave" e o seu "valor" ao objeto. Por fim atribui os valores à "propriedade" e o seu
+        // "valor" e atribui esses dados ao "objeto" inicial. Por fim, printei pelo Console com "console.log()".
     </script>
 </body>
 </html>
