@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 10</title>
+</head>
+<body>
+    <script>
+        const listaPessoas = [
+            {
+                nome: "Pessoinha",
+                idade: 18
+            },
+            {
+                nome: "Pessoa",
+                idade: 49
+            },
+            {
+                nome: "Pessoão",
+                idade: 70
+            },
+            {
+                nome: "Pessoa de pequeno porte",
+                idade: 20
+            },
+            {
+                nome: "Pessoa de médio porte",
+                idade: 25
+            }
+        ]
+    
+        var maior = 0
+
+        for (i in listaPessoas) {
+            if (listaPessoas[i].idade > maior) {
+                maior = listaPessoas[i].idade
+            }
+        }
+
+        console.log(maior)
+    </script>
+</body>
+</html>
