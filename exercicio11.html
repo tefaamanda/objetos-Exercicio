@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 11</title>
+</head>
+<body>
+    <script>
+        const Garrafinha = {
+            cor: "Vermelha",
+            marca: "Stanley",
+            material: "Metal",
+            preco: 50,
+            conteudoDeAgua: 30,
+            dona: {
+                nome: "Sthefany",
+                dataDeCompra: 2023
+            },
+            beberAgua() {
+                alert("Glub, glub, glub!")
+                this.conteudoDeAgua -= 10
+            },
+            jogarAgua() {
+                alert("Tchaaaaa!")
+                this.conteudoDeAgua -= 30
+            },
+            vender() {
+                alert("$$$$$")
+                this.preco += 50
+            }
+        }
+    </script>
+</body>
+</html>
